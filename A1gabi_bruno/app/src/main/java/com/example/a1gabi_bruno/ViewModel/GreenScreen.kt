@@ -1,48 +1,4 @@
-//package com.example.a1gabi_bruno.ViewModel
-//
-//import androidx.compose.foundation.background
-//import androidx.compose.foundation.layout.*
-//import androidx.compose.material3.*
-//import androidx.compose.runtime.Composable
-//import androidx.compose.ui.Alignment
-//import androidx.compose.ui.Modifier
-//import androidx.compose.ui.graphics.Color
-//import androidx.compose.ui.unit.dp
-//import androidx.navigation.NavController
-//
-//@Composable
-//fun GreenScreen(navController: NavController) {
-//    Surface(modifier = Modifier.fillMaxSize(), color = Color.Green) {
-//        Column(
-//            modifier = Modifier
-//                .fillMaxSize()
-//                .padding(16.dp),
-//            horizontalAlignment = Alignment.CenterHorizontally,
-//            verticalArrangement = Arrangement.Center
-//        ) {
-//            Text(
-//                text = "Tela Verde",
-//                color = Color.White,
-//                style = MaterialTheme.typography.headlineMedium
-//            )
-//            Spacer(modifier = Modifier.height(20.dp))
-//            Button(onClick = { navController.navigate("blue") }) {
-//                Text(text = "Ir para a Tela Azul")
-//            }
-//            Spacer(modifier = Modifier.height(10.dp))
-//            Button(onClick = { navController.navigate("red") }) {
-//                Text(text = "Ir para a Tela Vermelha")
-//            }
-//            Spacer(modifier = Modifier.height(10.dp))
-//            Button(onClick = { navController.navigate("book") }) {
-//                Text(text = "Ir para Gerenciador de Livros")
-//            }
-//        }
-//    }
-//}
-//
-//
-//
+
 package com.example.a1gabi_bruno.ViewModel
 
 import androidx.compose.foundation.layout.*
@@ -106,30 +62,7 @@ fun GreenScreen(
                 .padding(innerPadding)
                 .fillMaxSize()
         ) {
-            // Campo de texto para adicionar o nome do livro
-//            item {
-//                OutlinedTextField(
-//                    value = livroNome,
-//                    onValueChange = { livroNome = it },
-//                    label = { Text("Nome do Livro") },
-//                    modifier = Modifier
-//                        .fillMaxWidth()
-//                        .padding(16.dp)
-//                )
-//            }
 //
-//            // Botão para adicionar livro
-//            item {
-//                Button(
-//                    onClick = { addLivro(livroNome.text) },
-//                    modifier = Modifier
-//                        .fillMaxWidth()
-//                        .padding(horizontal = 16.dp)
-//                ) {
-//                    Text("Adicionar Livro")
-//                }
-//            }
-
             // Lista de livros
             items(livros) { livro ->
                 Text(
